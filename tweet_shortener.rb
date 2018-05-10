@@ -19,5 +19,7 @@ def word_substituter(tweet)
   words = tweet.split()
   words.each_with_index do |word,index|
     if dictionary_words.has_key? word
+      words[index] = 
+    end
   end
 end
