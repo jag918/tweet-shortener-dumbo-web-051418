@@ -15,8 +15,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
+  dictionary_words = dictionary
   words = tweet.split()
   words.each_with_index do |word,index|
-    if
+    if dictionary_words.
   end
 end
