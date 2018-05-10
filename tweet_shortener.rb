@@ -19,8 +19,8 @@ def word_substituter(tweet)
   dictionary_words = dictionary
   words = tweet.split()
   words.each_with_index do |word,index|
-    if dictionary_words.has_key? word.lower.to_sym
-      words[index] = dictionary_words[word.to_sym]
+    if dictionary_words.has_key? word.downcase.to_sym
+      words[index] = dictionary_words[word.downcase.to_sym]
     end
   end
   words.join(" ")
