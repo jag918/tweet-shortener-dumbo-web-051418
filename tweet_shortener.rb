@@ -22,4 +22,5 @@ def word_substituter(tweet)
       words[index] = dictionary_words[word]
     end
   end
+  words.join(" ")
 end
