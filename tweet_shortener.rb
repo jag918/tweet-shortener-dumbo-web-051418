@@ -19,7 +19,7 @@ def word_substituter(tweet)
   words = tweet.split()
   words.each_with_index do |word,index|
     if dictionary_words.has_key? word.to_sym
-      words[index] = dictionary_words[word]
+      words[index] = dictionary_words[word.to_sym]
     end
   end
   words.join(" ")
