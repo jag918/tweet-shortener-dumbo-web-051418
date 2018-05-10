@@ -13,3 +13,10 @@ def dictionary
     "and":"&"
   }
 end
+
+def word_substituter(tweet)
+  words = tweet.split()
+  words.each_with_index do |word,index|
+    if
+  end
+end
